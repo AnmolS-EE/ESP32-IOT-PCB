@@ -1,0 +1,311 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "22b198a3-add8-435b-b36e-05e6b8d693ec")
+	(paper "A4")
+	(title_block
+		(title "ESP32 Sensor Board")
+	)
+	(lib_symbols)
+	(junction
+		(at 180.34 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a10a6cc-24e4-4263-88a1-247634871258")
+	)
+	(wire
+		(pts
+			(xy 180.34 115.57) (xy 191.77 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a11583-3688-44fb-b436-c1fe65909344")
+	)
+	(wire
+		(pts
+			(xy 170.18 78.74) (xy 180.34 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf1e778-b5fb-41ed-91c2-dc9d55ce26ca")
+	)
+	(wire
+		(pts
+			(xy 170.18 115.57) (xy 180.34 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a55fa9cc-568b-4168-8b17-a66732a2f964")
+	)
+	(wire
+		(pts
+			(xy 170.18 101.6) (xy 191.77 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8d815a7-bc15-4f37-827d-8878b2ec9006")
+	)
+	(wire
+		(pts
+			(xy 180.34 78.74) (xy 180.34 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a3d105-f963-45ce-b1c0-3c1233658973")
+	)
+	(sheet
+		(at 191.77 96.52)
+		(size 30.48 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 17 255 0 1)
+		)
+		(uuid "1ac80ee3-fd26-42f2-b2cb-8a8f62615b81")
+		(property "Sheetname" "Digital Bus"
+			(at 191.77 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Digital_Bus.kicad_sch"
+			(at 191.77 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 191.77 101.6 180)
+			(uuid "c9d37db3-a8ff-48e0-a72a-deb6adadbdad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" input
+			(at 191.77 115.57 180)
+			(uuid "de99a9ce-72ba-44de-9501-ab656dcce301")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ESP32_IOT_PCB"
+				(path "/22b198a3-add8-435b-b36e-05e6b8d693ec"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 96.52)
+		(size 30.48 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 0 15 1)
+		)
+		(uuid "5926ede0-8674-442e-99e8-e5429cb53859")
+		(property "Sheetname" "MCU and Power"
+			(at 139.7 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU_and_Power.kicad_sch"
+			(at 139.7 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" output
+			(at 170.18 101.6 0)
+			(uuid "370fbb69-d315-4adf-b69a-d0e1d990c67c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" output
+			(at 170.18 115.57 0)
+			(uuid "5bba22a0-51df-45b1-ae62-1d964d7a7e27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "ESP32_IOT_PCB"
+				(path "/22b198a3-add8-435b-b36e-05e6b8d693ec"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 60.96)
+		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 0 241 1)
+		)
+		(uuid "6a8dc2f6-dda8-45f5-9d24-bc3aefceadc3")
+		(property "Sheetname" "UI and Outputs"
+			(at 139.7 60.2484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "UI_and_Outputs.kicad_sch"
+			(at 139.7 86.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GND" input
+			(at 170.18 78.74 0)
+			(uuid "f8a7bf78-3073-4edb-a3f2-f185b4e361fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "ESP32_IOT_PCB"
+				(path "/22b198a3-add8-435b-b36e-05e6b8d693ec"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 96.52)
+		(size 31.75 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 61 14 255 1)
+		)
+		(uuid "d69cac49-32c1-4fdc-b495-62fc080ff0db")
+		(property "Sheetname" "Analog Audio Engine"
+			(at 90.17 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Analog_Audio.kicad_sch"
+			(at 90.17 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ESP32_IOT_PCB"
+				(path "/22b198a3-add8-435b-b36e-05e6b8d693ec"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
