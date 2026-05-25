@@ -8,62 +8,6 @@
 		(title "ESP32 Sensor Board")
 	)
 	(lib_symbols)
-	(junction
-		(at 180.34 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a10a6cc-24e4-4263-88a1-247634871258")
-	)
-	(wire
-		(pts
-			(xy 180.34 115.57) (xy 191.77 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26a11583-3688-44fb-b436-c1fe65909344")
-	)
-	(wire
-		(pts
-			(xy 170.18 78.74) (xy 180.34 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bf1e778-b5fb-41ed-91c2-dc9d55ce26ca")
-	)
-	(wire
-		(pts
-			(xy 170.18 115.57) (xy 180.34 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a55fa9cc-568b-4168-8b17-a66732a2f964")
-	)
-	(wire
-		(pts
-			(xy 170.18 101.6) (xy 191.77 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8d815a7-bc15-4f37-827d-8878b2ec9006")
-	)
-	(wire
-		(pts
-			(xy 180.34 78.74) (xy 180.34 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6a3d105-f963-45ce-b1c0-3c1233658973")
-	)
 	(sheet
 		(at 191.77 96.52)
 		(size 30.48 29.21)
@@ -103,24 +47,24 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3" input
-			(at 191.77 101.6 180)
-			(uuid "c9d37db3-a8ff-48e0-a72a-deb6adadbdad")
+		(pin "SCL" bidirectional
+			(at 191.77 96.52 90)
+			(uuid "8bb1d585-59d4-4d75-88e1-91cb93247e09")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "GND" input
-			(at 191.77 115.57 180)
-			(uuid "de99a9ce-72ba-44de-9501-ab656dcce301")
+		(pin "SDA" bidirectional
+			(at 193.3893 96.52 90)
+			(uuid "84f79186-1694-449f-9eb9-2f31792a6b31")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
@@ -169,20 +113,29 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3" output
-			(at 170.18 101.6 0)
-			(uuid "370fbb69-d315-4adf-b69a-d0e1d990c67c")
+		(pin "1.8V" output
+			(at 139.7 96.52 90)
+			(uuid "87378fdb-3ea1-4c88-ab2b-6e2f1c136993")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(color 0 0 0 1)
 				)
 				(justify right)
 			)
 		)
-		(pin "GND" output
-			(at 170.18 115.57 0)
-			(uuid "5bba22a0-51df-45b1-ae62-1d964d7a7e27")
+		(pin "SCL" bidirectional
+			(at 141.3193 96.52 90)
+			(uuid "f4812afb-daa3-4736-9a9e-34d9b05e89ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 142.9386 96.52 90)
+			(uuid "970817a9-ff0e-4dc3-a455-2cc67db08b9b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -235,16 +188,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "GND" input
-			(at 170.18 78.74 0)
-			(uuid "f8a7bf78-3073-4edb-a3f2-f185b4e361fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Custom_Sensors") (type "KiCad") (uri "${KIPRJMOD}/Custom_Kicad_libs/Custom_Sensors.pretty") (options "") (descr ""))
+)
